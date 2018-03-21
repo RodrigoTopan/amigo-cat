@@ -4,11 +4,7 @@ var express = require('express');
 var app = express();
 //incluindo consign para entender nosso diretório routes
 var consign = require('consign');
-consign()
-    .include('./resources/routes/noticia')//incluindo todas as rotas no autoload
-    .then('config/dbConnection.js')//Método de conexão com bd no autoload
-    .then('resources/models')//Todos os models carregados no autoload
-    .into(app);
+
 consign()
     .include('./resources/routes/portal')
     .into(app);
