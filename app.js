@@ -19,10 +19,10 @@ var routePortal = require('./resources/routes/portal/home')(app);
 */
 
 //verificar se o servidor subiu e se ele está rodando na porta 300
-var port = 4000;
-app.listen(port, function () {
-    console.log('servidor on' + port);
-});
+
+var porta = process.env.PORT || 8080;
+app.listen(porta);
+
 
 
 //Utilizando o consign para fazer autoload de todas as rotas automáticamente
