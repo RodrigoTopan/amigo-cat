@@ -16,3 +16,10 @@ module.exports = function () {
     console.log('O autoload carregou o módulo de conexão com o banco de dados');
     return connMysql;
 }*/
+
+const Database = require('./database');
+
+const databaseSQL = new Database();
+
+async function conectar() {
+    await databaseSQL.conectar();}

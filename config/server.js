@@ -7,6 +7,7 @@ var consign = require('consign');
 
 consign()
     .include('./resources/routes/portal')
+    .then('./resources/models')
     .into(app);
 
 //Para que o express consiga trabalhar em conjunto com o express
