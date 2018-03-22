@@ -17,9 +17,9 @@ module.exports = function () {
     return connMysql;
 }*/
 
-const Database = require('./database');
+const Database = require('../databaseSQL');
 
 const databaseSQL = new Database();
 
-async function conectar() {
+module.exports = async function() {
     await databaseSQL.conectar();}

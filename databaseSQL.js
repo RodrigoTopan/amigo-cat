@@ -11,7 +11,7 @@ class DatabaseSQL {
         this.UserModel = {};
     }
     async conectar() {
-        const herokuPostgres = process.env.DATABASE_URL;//postgres://moktihliodsokv:56b2a6adf240b6a96bc1571e51e1faea80bc9ab1fbc5c664be4cc79902159723@ec2-54-204-45-43.compute-1.amazonaws.com:5432/dl42slg5blpe4
+        const herokuPostgres = "postgres://moktihliodsokv:56b2a6adf240b6a96bc1571e51e1faea80bc9ab1fbc5c664be4cc79902159723@ec2-54-204-45-43.compute-1.amazonaws.com:5432/dl42slg5blpe4";
         this.ImersaoNudesJS = new Sequelize(
             herokuPostgres,
             {
