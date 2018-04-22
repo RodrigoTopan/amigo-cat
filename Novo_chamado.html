@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Novo chamado</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+
+<center><h1><b>Entrada de novo chamado</b></h1></center>
+
+
+<form method="Post">
+<fieldset>
+
+<table style="width:100%">
+  <tr>
+    <th>Título</th>
+  </tr>
+   <td> <input type="text" name="txttitulocham"></td>
+  <tr>
+  </tr>
+       <tr>
+    <th>Insira uma foto do chamado</th>
+  </tr>
+   <td> <input type="file" id="myFilecham"></td>
+  <tr>
+  </tr>
+    <tr>
+    <th>Descreva o chamado</th>
+  </tr>
+   <td> <textarea name="message" rows="15" cols="30"></textarea></td>
+  <tr>
+  </tr>
+     <tr>
+    <th>Data de inicio</th>
+  </tr>
+   <td> <input type="Data" name="txtDtinicham"></td>
+  <tr>
+  </tr>
+   <tr>
+    <th>Data De termino</th>
+  </tr>
+   <td> <input type="Data" name="txtDttermcham"></td>
+  <tr>
+  </tr>
+   <td> <input type="text" name="txtEmail"></td>
+  <tr>
+  </tr>
+ <td> <select name="Status">
+  <option value="Iniciado">Iniciado</option>
+  <option value="Em_andamento">Em andamento</option>
+  <option value="Processado">Processado</option>
+  </tr>
+    <tr>
+    <th>Funcionario</th>
+  </tr>
+   <td> <input type="text" name="txtFuncionario"></td>
+  <tr>
+  </tr>
+ 
+</table>
+
+<center><input type="submit" value="Confirmar"></center>
+
+</fieldset>
+</form>
+
+
+</body>
+</html>
